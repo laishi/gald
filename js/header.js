@@ -43,6 +43,18 @@ $(document).ready(function() {
     var headerHeight = svgBox.getBBox().height
 
 
+    TweenMax.from(".navHome", 5, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.from(".navTeam", 5, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.from(".navWork", 5, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.from(".navContact", 5, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+
+
+
+
+
+
+
+
 
     function scrollEvent(scrollPos) {
 
