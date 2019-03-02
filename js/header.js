@@ -14,7 +14,6 @@ $(document).ready(function() {
     var sliderScrollHeight;
 
     var svgScrollH = parseInt(photo.getAttribute("d").split(" ")[5]);
-    console.log("svgScrollH: " + svgScrollH)
     var fixHeaderHeight = 150;
     var windowW = window.innerWidth;
     var windowHS = 960;
@@ -43,10 +42,10 @@ $(document).ready(function() {
     var headerHeight = svgBox.getBBox().height
 
 
-    TweenMax.from(".navHome", 2, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.2), y: -500 });
+    TweenMax.from(".navHome", 2, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
     TweenMax.from(".navTeam", 1, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
     TweenMax.from(".navWork", 1, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
-    TweenMax.from(".navContact", 2, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.from(".navContact", 2, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
 
 
 
@@ -66,7 +65,6 @@ $(document).ready(function() {
 
         var logopos = $(".galdCicle").offset().top + 60
         $(".sliders").height(logopos);
-        console.log("logopos: " + logopos)
 
 
         // $(".headerImg").css("top", logopos - 300);
