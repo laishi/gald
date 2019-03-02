@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curved Header</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="shortcut icon" href="gald-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/pagescroll.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+
+</head>
+
+<body>
+
+    <div class="page galdhome" data-section-name="光爱简介">
+
+        <div class="svgHeader">
+
+
+
+            <div class="curveBg">
+                <svg class="svgCurve" id="svgBox" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path>
+                </svg>
+            </div>
+
+
+
+
+            <div class="sliders">
+                <div class="sliderCont">
+                    <div class="sliderImg" style="background-image: url(img/slider/large/eyessvg.png)">
+                        <h3>我们为每一盏灯精确配光，满足您对灯光的极致体验</h3>
+                        <!-- <img src="img/slider/large/eyessvg.png" alt="重庆照明设计"> -->
+                    </div>
+                    <div class="sliderImg" style="background-image: url(img/slider/large/Architecture.png)">
+                        <h3>融合智能照明控制，呈现美轮美奂的效果</h3>
+                        <!-- <img src="img/slider/large/Architecture.png" alt="重庆照明设计"> -->
+                    </div>
+                    <div class="sliderImg" style="background-image: url(img/slider/large/lights.png)">
+                        <h3>国际灯光节作品，也许可以代表我们的行业水平</h3>
+                        <!-- <img src="img/slider/large/lights.png" alt="重庆照明设计"> -->
+                    </div>
+                    <div class="sliderImg" style="background-image: url(img/slider/large/Skyscrapers.png)">
+                        <h3>优秀建筑照明设计，是为了我们的天空更美妙</h3>
+                        <!-- <img src="img/slider/large/Skyscrapers.png" alt="重庆照明设计"> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div>
+
+                <svg class="svgCurve" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                         
+                    <defs>
+                        <filter id="goo-filter">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation=".05" />
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+                        </filter>
+                    </defs>
+                    
+                    
+                    <defs>
+                        <pattern width="100%" height="100%" id="svgBg" patternUnits="userSpaceOnUse">
+                            <image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMaxYMax slice" xlink:href="img/lighting.jpg" />
+                        </pattern>
+                    </defs>
+                    
+
+                    <defs>
+                        <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700"></path>
+                        <path id="textCurve" stroke="red" fill="white" stroke-width="3" d="M 0 550 Q 960 1000 1920 550"></path>
+                    </defs>
+                    <!-- <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path> -->
+
+
+
+                    <text font-family="Verdana" font-size="38">
+                        <textPath class="galdText" x='0' y='0' xlink:href="#textCurve" startOffset="50%" text-anchor="middle"
+                            fill='white'>
+                            光 爱 照 明 设 计
+                        </textPath>
+                    </text>
+
+
+
+                    <g class='navIcons'>
+
+                        <a href="index.html">
+                            <g class='navIcon navHomeGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe73b;</text>
+                                <text x='0' y='20' text-anchor="middle" class="icon navText">首 页</text>
+                                <animateMotion class='navHome' rotate="auto" keyPoints="0.35;0.35" keyTimes="0;1" calcMode="linear"
+                                    dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+                        <a href="#galdteam">
+                            <g class='navIcon navTeamGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <text x='0' y='0' text-anchor="middle" class="icon iconfont workIcon">&#xe658;</text>
+                                <text x='0' y='20' text-anchor="middle" class="icon navText">团 队</text>
+                                <animateMotion class='navTeam' rotate="auto" keyPoints="0.42;0.42" keyTimes="0;1" calcMode="linear"
+                                    dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+                        <a href="index.html">
+                            <g class='galdLogo' id="galdLogo">
+                                <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
+                                <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
+                                <animateMotion id='navLogo' rotate="auto" keyPoints="0.5;0.5" keyTimes="0;1" calcMode="linear"
+                                    dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+                        <a href="#galdwork">
+                            <g class='navIcon navWorkGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xedac;</text>
+                                <text x='0' y='20' text-anchor="middle" class="icon navText">项 目</text>
+                                <animateMotion class='navWork' rotate="auto" keyPoints="0.58;0.58" keyTimes="0;1" calcMode="linear"
+                                    dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+                        <a href="#galdcontact">
+                            <g class='navIcon navContactGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe63f;</text>
+                                <text x='0' y='20' text-anchor="middle" class="icon navText">联 系</text>
+                                <animateMotion class='navContact' rotate="auto" keyPoints="0.65;0.65" keyTimes="0;1" calcMode="linear"
+                                    dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+                    </g>
+
+                </svg>
+            </div>
+
+        </div>
+
+
+
+        <div class="profile" style="top: 800px; position: relative; width: 100%; height: 1000px; background-color: rgba(67, 165, 42, 0)">
+
+
+            <h1>重庆光爱照明设计--致力于照明方案设计、灯光环境评估、灯饰工程督导；公司凝聚国家级照明设计资质人才，旨在为您提供最为适宜的照明工程、灯饰工程设计解决方案。业务领域包括:建筑夜景照明/城市景观照明/道路桥梁照明/商业家居照明/广场古建照明/迎春灯饰等全方位照明/灯光设计解决方案。我们拥有自主超媒体演示系统，能充分展示多维度的照明方案表现。让您在未动工之前就能清晰地知道照明效果、投资概算、运维成本；设计手法简洁新颖，表现形式丰富美观、并成功应用于市级、国家级重点项目。</h1>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="page galdserver" id="galdserver" data-section-name="服务领域"></div>
+    <div class="page galdworkflow" id="galdworkflow" data-section-name="设计流程"></div>
+    <div class="page galdVideo " id="galdVideo" data-section-name="创意无限"></div>
+    <div class="page galdTeam" id="galdteam" data-section-name="专家团队"></div>
+    <div class="page galdwork" id="galdwork" data-section-name="设计项目">
+        <div class="page galdcontact" id="galdcontact" data-section-name="联系我们"></div>
+
+
+
+
+        <script src='js/jquery-3.3.1.min.js'></script>
+        <script src='js/jquery1.9.1-ui.min.js'></script>
+        <script src='js/pagescroll.js'></script>
+        <script src='js/TweenMax.min.js'></script>
+        <script src='js/header.js'></script>
+
+
+
+</body>
+
+
+</html>
