@@ -23,6 +23,22 @@
     animation: blobber 30s 0s linear infinite, cobler 30s 0s linear infinite alternate;
 }
 
+.blob:nth-child(1) {
+    -webkit-transform: rotate(-20deg);
+}
+
+.blob:nth-child(2) {
+    -webkit-transform: rotate(0deg);
+}
+
+.blob:nth-child(3) {
+    -webkit-transform: rotate(5deg);
+}
+
+.blob:nth-child(4) {
+    -webkit-transform: rotate(20deg);
+}
+
 .blob:nth-child(1):after {
     background-image: url(../../img/work/03.jpg);
 }
