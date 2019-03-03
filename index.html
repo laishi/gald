@@ -14,11 +14,9 @@
 
 
     <link rel="stylesheet" href="css/mixGrid.css">
-    <link rel="stylesheet" href="incude/waveHeader/css/waveHeader.css">
-    <link rel="stylesheet" href="incude/actual-rotating-slider/css/style.css">
 
-    <link rel="stylesheet" href="incude/material-inspired-panel/css/contactCart.css">
     <link rel="stylesheet" href="incude/ParallaxFlippingCards/style.css">
+    <link rel="stylesheet" href="incude/blob/style.css">
 
 
 
@@ -28,42 +26,12 @@
 
 <body>
 
-    <div class="page galdhome" data-section-name="光爱简介">
+    <div id="galdhome" class="page galdhome" data-section-name="光爱简介">
 
         <div class="svgHeader">
 
 
-
-            <div class="curveBg">
-                <svg class="svgCurve" id="svgBox" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path>
-                </svg>
-            </div>
-
-            <div class="sliders">
-                <div class="sliderCont">
-                    <div class="sliderImg">
-                        <h3 class="neon">我们为每一盏灯精确配光，满足您对灯光的极致体验</h3>
-                        <img src="img/eyessvg.png" alt="重庆照明设计">
-                    </div>
-                    <div class="sliderImg">
-                        <h3 class="neon">融合智能照明控制，呈现美轮美奂的效果</h3>
-                        <img src="img/Architecture.png" alt="重庆照明设计">
-                    </div>
-                    <div class="sliderImg">
-                        <h3 class="neon">国际灯光节作品，也许可以代表我们的行业水平</h3>
-                        <img src="img/lights.png" alt="重庆照明设计">
-                    </div>
-                    <div class="sliderImg">
-                        <h3 class="neon">优秀建筑照明设计，是为了我们的天空更美妙</h3>
-                        <img src="img/Skyscrapers.png" alt="重庆照明设计">
-                    </div>
-                </div>
-            </div>
-
-
-            <div>
-                <svg class="svgCurve" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="svgCurve" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                     <defs>
                         <filter id="goo-filter">
@@ -75,20 +43,51 @@
                         </filter>
                     </defs>
 
-
                     <defs>
-                        <pattern width="100%" height="100%" id="svgBg" patternUnits="userSpaceOnUse">
-                            <image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMaxYMax slice"
-                                xlink:href="img/lighting.jpg" />
-                        </pattern>
+                        <clipPath id="bgclip">
+                            <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path>
+                        </clipPath>
                     </defs>
+                    
+                    <path id="svgBg" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="#010813"></path>
 
+
+
+
+
+
+
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">我们为每一盏灯精确配光，满足您对灯光的极致体验</text>
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">融合智能照明控制，呈现美轮美奂的效果</text>
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">优秀建筑照明设计，是为了我们的天空更美妙</text>
+                    <text class="sliderText" font-size="24" x="35%" y="200" fill="#ccc" text-anchor="middle">国际灯光节作品，也许可以代表我们的行业水平</text>
+
+
+
+
+                    <g class="clipImg" clip-path="url(#bgclip)">
+                        
+                        <image xlink:href="img/eyessvg.png" x="0" y="0" width="100%" height="100%" />
+                    </g>
+
+                    <g class="clipImg" clip-path="url(#bgclip)">
+                        
+                        <image xlink:href="img/Architecture.png" x="0" y="0" width="100%" height="100%" />
+                    </g>
+                    
+                    
+                    <g class="clipImg" clip-path="url(#bgclip)">
+                        
+                        <image xlink:href="img/Skyscrapers.png" x="0" y="0" width="100%" height="100%" />
+                    </g>
+                    
+                    <g class="clipImg" clip-path="url(#bgclip)">
+                        <image xlink:href="img/Lights.png" x="0" y="0" width="100%" height="100%" />
+                    </g>
+                        
 
                     <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700"></path>
                     <path id="textCurve" stroke="none" fill="none" stroke-width="3" d="M 0 620 Q 960 920 1920 620"></path>
-                    <!-- <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path> -->
-
-
 
                     <text font-family="Verdana" font-size="38">
                         <textPath class="galdText" x='0' y='0' xlink:href="#textCurve" startOffset="50%" text-anchor="middle"
@@ -98,10 +97,12 @@
                     </text>
 
 
+                    
+
 
                     <g class='navIcons'>
 
-                        <a href="index.html">
+                        <a href="#galdhome">
                             <g class='navIcon navHomeGroup'>
                                 <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
                                 <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe73b;</text>
@@ -125,7 +126,7 @@
                             </g>
                         </a>
 
-                        <a href="index.html">
+                        <a href="#galdhome">
                             <g class='galdLogo' id="galdLogo">
                                 <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
                                 <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
@@ -165,14 +166,6 @@
                     </g>
 
                 </svg>
-            </div>
-
-
-
-
-
-
-
 
 
         </div>
@@ -194,18 +187,22 @@
                     <h1>我们信奉：用专业水平打动您 用敬业态度感动您 </h1>
                 </div>
 
-
             </div>
         </div>
+
+        <div class="blobs">
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+            <div class="blob"></div>
+        </div>
+
     </div>
 
 
 
 
-
-
     <!-- 服务领域 -->
-
     <div class="page galdserver" id="galdserver" data-section-name="服务领域">
 
         <div class="cards">
@@ -286,18 +283,8 @@
                 </div>
             </div>
 
-
         </div>
     </div>
-
-    </div>
-
-
-
-
-
-
-
 
 
 
@@ -307,11 +294,6 @@
     <div class="page galdTeam" id="galdteam" data-section-name="专家团队"></div>
     <div class="page galdwork" id="galdwork" data-section-name="设计项目"></div>
     <div class="page galdcontact" id="galdcontact" data-section-name="联系我们"></div>
-
-
-
-
-
 
 
 </body>

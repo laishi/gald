@@ -15,9 +15,17 @@
     margin: 0 auto;
 }
 
+.curveBg {
+    position: absolute;
+}
+
 .svgHeader {
     position: relative;
     z-index: 1000;
+}
+
+.profile {
+    position: relative;
 }
 
 .headerImg {
@@ -27,6 +35,10 @@
     margin: 50px auto;
     text-align: center;
     /* background-color: #4a2b5d; */
+}
+
+.clipImg {
+    clip-path: url(#bgclip);
 }
 
 .headerText {

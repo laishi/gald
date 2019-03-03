@@ -2,6 +2,7 @@ $(document).ready(function() {
 
     var svgBox = document.getElementById("svgBox");
     var photo = document.getElementById("photo");
+    var svgBg = document.getElementById("svgBg");
     var navCurve = document.getElementById("navCurve");
     var textCurve = document.getElementById("textCurve");
 
@@ -39,13 +40,35 @@ $(document).ready(function() {
 
 
 
-    var headerHeight = svgBox.getBBox().height
-
-
     TweenMax.from(".navHome", 2, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
     TweenMax.from(".navTeam", 1, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
     TweenMax.from(".navWork", 1, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
     TweenMax.from(".navContact", 2, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
+
+
+
+    // tween slider
+    var starttw = new TimelineMax({
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0,
+    });
+
+    starttw.set('.clipImg', { x: window.innerWidth, scale: 1, opacity: 0 });
+
+    starttw.staggerTo('.clipImg', 5, { ease: SlowMo.ease.config(0.1, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
+
+
+
+    var texttw = new TimelineMax({
+        repeat: -1,
+        yoyo: true,
+        repeatDelay: 0,
+    });
+
+    texttw.set('.sliderText', { x: window.innerWidth, scale: 1, opacity: 0 });
+
+    texttw.staggerTo('.sliderText', 5, { ease: SlowMo.ease.config(0.3, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
 
 
 
@@ -76,12 +99,6 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
         if (scrollPos < 660) {
             $(".navHome").attr("keyPoints", homepos + ";" + homepos);
             $(".navTeam").attr("keyPoints", teamkpos + ";" + teamkpos);
@@ -92,14 +109,17 @@ $(document).ready(function() {
 
 
 
-
-
         if (scrollPos >= 0 && scrollPos < window.innerHeight) {
 
             sliderScrollHeight = parseInt(photo.getAttribute("d").split(" ")[5]);
             var svgHeight = parseInt(photo.getAttribute("d").split(" ")[2]); //479
             curveValue = svgScrollH - parseFloat(scrollPos * curveRate);
 
+
+            svgBg.setAttribute(
+                "d",
+                "M 0 " + svgHeight + " Q " + windowHS + " " + curveValue + " 1920 700 V 0 H 0 Z"
+            );
 
 
 
