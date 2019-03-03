@@ -107,8 +107,8 @@ $(document).ready(function() {
         // END OF THE PLUGIN!!//
 
     $(document).page({
-        'page': '.page',
-        'header': '.header',
+        'page': 'section',
+        // 'header': '.header',
         // 'sticky': true,
         // 'stickyCls': 'nav',
         // 'pageName': ['Pages/Name', 'Sticky Menu', 'Easing', 'Threshold/Time']

@@ -1,4 +1,5 @@
 .page {
+    position: relative;
     width: 100%;
     min-height: 100vh;
 }
@@ -6,7 +7,7 @@
 .galdhome {
     overflow: hidden;
     width: 100%;
-    /* height: 200vh; */
+    height: inherit;
     background-color: #ccc;
 }
 
