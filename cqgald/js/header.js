@@ -54,7 +54,7 @@ $(document).ready(function() {
         repeatDelay: 0,
     });
 
-    starttw.set('.clipImg', { x: window.innerWidth, scale: 1, opacity: 0 });
+    starttw.set('.clipImg', { x: window.innerWidth, scale: 1, opacity: 0.2 });
 
     starttw.staggerTo('.clipImg', 5, { ease: SlowMo.ease.config(0.1, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
 
@@ -66,14 +66,9 @@ $(document).ready(function() {
         repeatDelay: 0,
     });
 
-    texttw.set('.sliderText', { x: window.innerWidth, scale: 1, opacity: 0 });
+    texttw.set('.sliderText', { x: window.innerWidth, scale: 1, opacity: 0.2 });
 
     texttw.staggerTo('.sliderText', 5, { ease: SlowMo.ease.config(0.3, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
-
-
-
-
-
 
 
 
