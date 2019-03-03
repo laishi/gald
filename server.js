@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-app.use(express.static(__dirname + '/gald'));
+app.use(express.static(__dirname + '/cqgald'));
 
 app.get('/dashboard', function(req, res) {
     res.sendFile('/dashboard.html');
