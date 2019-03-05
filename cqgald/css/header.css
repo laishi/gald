@@ -51,10 +51,6 @@
     /* background-color: #4a2b5d; */
 }
 
-.clipImg {
-    clip-path: url(#bgclip);
-}
-
 .headerText {
     position: relative;
     text-indent: 2em;

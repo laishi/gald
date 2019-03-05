@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     var svgBox = document.getElementById("svgBox");
-    var photo = document.getElementById("photo");
     var svgBg = document.getElementById("svgBg");
     var navCurve = document.getElementById("navCurve");
     var textCurve = document.getElementById("textCurve");
@@ -14,7 +13,7 @@ $(document).ready(function() {
     var rate = 1.8;
     var sliderScrollHeight;
 
-    var svgScrollH = parseInt(photo.getAttribute("d").split(" ")[5]);
+    var svgScrollH = parseInt(svgBg.getAttribute("d").split(" ")[5]);
     var fixHeaderHeight = 150;
     var windowW = window.innerWidth;
     var windowHS = 960;
@@ -106,8 +105,8 @@ $(document).ready(function() {
 
         if (scrollPos >= 0 && scrollPos < window.innerHeight) {
 
-            sliderScrollHeight = parseInt(photo.getAttribute("d").split(" ")[5]);
-            var svgHeight = parseInt(photo.getAttribute("d").split(" ")[2]); //479
+            sliderScrollHeight = parseInt(svgBg.getAttribute("d").split(" ")[5]);
+            var svgHeight = parseInt(svgBg.getAttribute("d").split(" ")[2]); //479
             curveValue = svgScrollH - parseFloat(scrollPos * curveRate);
 
 
@@ -116,12 +115,6 @@ $(document).ready(function() {
                 "M 0 " + svgHeight + " Q " + windowHS + " " + curveValue + " 1920 700 V 0 H 0 Z"
             );
 
-
-
-            photo.setAttribute(
-                "d",
-                "M 0 " + svgHeight + " Q " + windowHS + " " + curveValue + " 1920 700 V 0 H 0 Z"
-            );
 
             navCurve.setAttribute(
                 "d",
