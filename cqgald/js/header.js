@@ -23,15 +23,15 @@ $(document).ready(function() {
 
 
 
-    var homekey = $(".navHome").attr("keyPoints").split(";")[0] - 0.0;
-    var teamkey = $(".navTeam").attr("keyPoints").split(";")[0] - 0.0;
-    var workkey = $(".navWork").attr("keyPoints").split(";")[0] - 0.0;
-    var contactkey = $(".navContact").attr("keyPoints").split(";")[0] - 0.0;
+    // var homekey = $(".navHome").attr("keyPoints").split(";")[0] - 0.0;
+    // var teamkey = $(".navTeam").attr("keyPoints").split(";")[0] - 0.0;
+    // var workkey = $(".navWork").attr("keyPoints").split(";")[0] - 0.0;
+    // var contactkey = $(".navContact").attr("keyPoints").split(";")[0] - 0.0;
 
-    // var homekey = 0.35;
-    // var teamkey = 0.42;
-    // var workkey = 0.58;
-    // var contactkey = 0.65;
+    var homekey = 0.35;
+    var teamkey = 0.42;
+    var workkey = 0.58;
+    var contactkey = 0.65;
 
 
     var logopos = $(".galdCicle").offset().top
@@ -39,10 +39,10 @@ $(document).ready(function() {
 
 
 
-    TweenMax.from(".navHome", 2, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
-    TweenMax.from(".navTeam", 1, { attr: { keyPoints: '0.0;0.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
-    TweenMax.from(".navWork", 1, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
-    TweenMax.from(".navContact", 2, { attr: { keyPoints: '1.0;1.0' }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
+    TweenMax.to(".navHome", 1, { attr: { keyPoints: homekey + ";" + homekey }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
+    TweenMax.to(".navTeam", 1, { attr: { keyPoints: teamkey + ";" + teamkey }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.to(".navWork", 1, { attr: { keyPoints: workkey + ";" + workkey }, ease: Elastic.easeOut.config(0.6, 0.5), y: -500 });
+    TweenMax.to(".navContact", 1, { attr: { keyPoints: contactkey + ";" + contactkey }, ease: Elastic.easeOut.config(0.6, 0.3), y: -500 });
 
 
 
@@ -75,16 +75,16 @@ $(document).ready(function() {
     function scrollEvent(scrollPos) {
 
         var scrollRate = scrollPos / homeHeight;
-        var homepos = homekey - scrollRate;
-        var teamkpos = teamkey - scrollRate / 2;
-        var workpos = workkey + scrollRate / 2;
-        var contactpos = contactkey + scrollRate;
+        var homepos = Math.max(homekey - scrollRate, 0);
+        var teamkpos = Math.max(teamkey - scrollRate / 2, 0);
+        var workpos = Math.min(workkey + scrollRate / 2, 1);
+        var contactpos = Math.min(contactkey + scrollRate, 1);
 
         var logopos = $(".galdCicle").offset().top + 60
         $(".sliders").height(logopos);
 
 
-        // $(".headerImg").css("top", logopos - 300);
+
 
         if (scrollPos < logopos) {
 
@@ -93,12 +93,11 @@ $(document).ready(function() {
 
 
 
-        if (scrollPos < 660) {
-            $(".navHome").attr("keyPoints", homepos + ";" + homepos);
-            $(".navTeam").attr("keyPoints", teamkpos + ";" + teamkpos);
-            $(".navWork").attr("keyPoints", workpos + ";" + workpos);
-            $(".navContact").attr("keyPoints", contactpos + ";" + contactpos);
-        }
+        $(".navHome").attr("keyPoints", homepos + ";" + homepos);
+        $(".navTeam").attr("keyPoints", teamkpos + ";" + teamkpos);
+        $(".navWork").attr("keyPoints", workpos + ";" + workpos);
+        $(".navContact").attr("keyPoints", contactpos + ";" + contactpos);
+
 
 
 

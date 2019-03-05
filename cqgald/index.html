@@ -41,13 +41,19 @@
                     <use xlink:href="#maskBg" />
                 </mask>
 
+                
+
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgBg" fill="#010813"></use>
+                <g mask="url(#maskLink)">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maskImg"></use>
+                </g>
+                <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700"></path>
+                <path id="textCurve" stroke="none" fill="none" stroke-width="3" d="M 0 620 Q 960 920 1920 620"></path>
 
 
 
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">我们为每一盏灯精确配光，满足您对灯光的极致体验</text>
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">融合智能照明控制，呈现美轮美奂的效果</text>
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">优秀建筑照明设计，是为了我们的天空更美妙</text>
-                <text class="sliderText" font-size="24" x="35%" y="200" fill="#ccc" text-anchor="middle">国际灯光节作品，也许可以代表我们的行业水平</text>
+
+
 
 
                 <symbol id="maskImg">
@@ -56,14 +62,11 @@
                     <image class="clipImg" xlink:href="img/Skyscrapers.png" x="0" y="0" width="100%" height="100%" />
                     <image class="clipImg" xlink:href="img/Lights.png" x="0" y="0" width="100%" height="100%" />
                 </symbol>
+                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">我们为每一盏灯精确配光，满足您对灯光的极致体验</text>
+                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">融合智能照明控制，呈现美轮美奂的效果</text>
+                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">优秀建筑照明设计，是为了我们的天空更美妙</text>
+                <text class="sliderText" font-size="24" x="35%" y="200" fill="#ccc" text-anchor="middle">国际灯光节作品，也许可以代表我们的行业水平</text>
 
-
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgBg" fill="#010813"></use>
-                <g mask="url(#maskLink)">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maskImg"></use>
-                </g>
-                <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700"></path>
-                <path id="textCurve" stroke="none" fill="none" stroke-width="3" d="M 0 620 Q 960 920 1920 620"></path>
 
 
 
@@ -84,7 +87,7 @@
                             <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
                             <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe73b;</text>
                             <text x='0' y='20' text-anchor="middle" class="icon navText">首 页</text>
-                            <animateMotion class='navHome' rotate="auto" keyPoints="0.35;0.35" keyTimes="0;1"
+                            <animateMotion class='navHome' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
                                 calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
                                 <mpath xlink:href="#navCurve"></mpath>
                             </animateMotion>
@@ -96,23 +99,13 @@
                             <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
                             <text x='0' y='0' text-anchor="middle" class="icon iconfont workIcon">&#xe658;</text>
                             <text x='0' y='20' text-anchor="middle" class="icon navText">团 队</text>
-                            <animateMotion class='navTeam' rotate="auto" keyPoints="0.42;0.42" keyTimes="0;1"
+                            <animateMotion class='navTeam' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
                                 calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
                                 <mpath xlink:href="#navCurve"></mpath>
                             </animateMotion>
                         </g>
                     </a>
 
-                    <a href="#galdhome">
-                        <g class='galdLogo' id="galdLogo">
-                            <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
-                            <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
-                            <animateMotion id='navLogo' rotate="auto" keyPoints="0.5;0.5" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
 
 
                     <a href="#galdwork">
@@ -120,7 +113,7 @@
                             <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
                             <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xedac;</text>
                             <text x='0' y='20' text-anchor="middle" class="icon navText">项 目</text>
-                            <animateMotion class='navWork' rotate="auto" keyPoints="0.58;0.58" keyTimes="0;1"
+                            <animateMotion class='navWork' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
                                 calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
                                 <mpath xlink:href="#navCurve"></mpath>
                             </animateMotion>
@@ -133,12 +126,30 @@
                             <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
                             <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe63f;</text>
                             <text x='0' y='20' text-anchor="middle" class="icon navText">联 系</text>
-                            <animateMotion class='navContact' rotate="auto" keyPoints="0.65;0.65" keyTimes="0;1"
+                            <animateMotion class='navContact' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
                                 calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
                                 <mpath xlink:href="#navCurve"></mpath>
                             </animateMotion>
                         </g>
                     </a>
+
+
+
+
+                    <a href="#galdhome">
+                        <g class='galdLogo' id="galdLogo">
+                            <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
+                            <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
+                            <animateMotion id='navLogo' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
+                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                <mpath xlink:href="#navCurve"></mpath>
+                            </animateMotion>
+                        </g>
+                    </a>
+
+
+
+
 
                 </g>
 
