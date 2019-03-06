@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/pagescroll.css">
 
     <link rel="stylesheet" href="incude/ParallaxFlippingCards/style.css">
-    <link rel="stylesheet" href="incude/blob/style.css">
+    <link rel="stylesheet" href="incude/textparticles/css/style.css">
+    <link rel="stylesheet" href="incude/wavecard/css/style.css">
 
 
 
@@ -22,139 +23,160 @@
 </head>
 
 <body>
+    <div class="navPointer">
+        <div class="navCicle">
+            <h2>重庆光爱照明设计</h2>
+        </div>
+    </div>
+
 
     <div id="galdhome" class="page galdhome" data-section-name="光爱简介">
 
         <div class="svgHeader">
 
 
-            <svg class="svgCurve" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                <!-- <path id="photo" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path> -->
-                <symbol id="maskBg">
-                    <g fill="white">
-                        <path id="svgBg" class="photo" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z"></path>
-                    </g>
-                </symbol>
+            <svg class="svgCurveBg" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-                <mask id="maskLink">
-                    <use xlink:href="#maskBg" />
-                </mask>
-
-                
-
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgBg" fill="#010813"></use>
-                <g mask="url(#maskLink)">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maskImg"></use>
-                </g>
-                <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700"></path>
-                <path id="textCurve" stroke="none" fill="none" stroke-width="3" d="M 0 620 Q 960 920 1920 620"></path>
-
-
-
-
-
-
-
-                <symbol id="maskImg">
-                    <image class="clipImg" xlink:href="img/eyessvg.png" x="0" y="0" width="100%" height="100%" />
-                    <image class="clipImg" xlink:href="img/Architecture.png" x="0" y="0" width="100%" height="100%" />
-                    <image class="clipImg" xlink:href="img/Skyscrapers.png" x="0" y="0" width="100%" height="100%" />
-                    <image class="clipImg" xlink:href="img/Lights.png" x="0" y="0" width="100%" height="100%" />
-                </symbol>
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">我们为每一盏灯精确配光，满足您对灯光的极致体验</text>
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">融合智能照明控制，呈现美轮美奂的效果</text>
-                <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc" text-anchor="middle">优秀建筑照明设计，是为了我们的天空更美妙</text>
-                <text class="sliderText" font-size="24" x="35%" y="200" fill="#ccc" text-anchor="middle">国际灯光节作品，也许可以代表我们的行业水平</text>
-
-
-
-
-                <text font-family="Verdana" font-size="38">
-                    <textPath class="galdText" x='0' y='0' xlink:href="#textCurve" startOffset="50%" text-anchor="middle"
-                        fill='white'>
-                        光 爱 照 明 设 计
-                    </textPath>
-                </text>
-
-
-
-
-                <g class='navIcons'>
-
-                    <a href="#galdhome">
-                        <g class='navIcon navHomeGroup'>
-                            <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
-                            <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe73b;</text>
-                            <text x='0' y='20' text-anchor="middle" class="icon navText">首 页</text>
-                            <animateMotion class='navHome' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
-
-                    <a href="#galdteam">
-                        <g class='navIcon navTeamGroup'>
-                            <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
-                            <text x='0' y='0' text-anchor="middle" class="icon iconfont workIcon">&#xe658;</text>
-                            <text x='0' y='20' text-anchor="middle" class="icon navText">团 队</text>
-                            <animateMotion class='navTeam' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
-
-
-
-                    <a href="#galdwork">
-                        <g class='navIcon navWorkGroup'>
-                            <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
-                            <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xedac;</text>
-                            <text x='0' y='20' text-anchor="middle" class="icon navText">项 目</text>
-                            <animateMotion class='navWork' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
-
-
-                    <a href="#galdcontact">
-                        <g class='navIcon navContactGroup'>
-                            <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
-                            <text x='0' y='0' text-anchor="middle" class="icon iconfont">&#xe63f;</text>
-                            <text x='0' y='20' text-anchor="middle" class="icon navText">联 系</text>
-                            <animateMotion class='navContact' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
-
-
-
-
-                    <a href="#galdhome">
-                        <g class='galdLogo' id="galdLogo">
-                            <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
-                            <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
-                            <animateMotion id='navLogo' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
-                                calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
-                                <mpath xlink:href="#navCurve"></mpath>
-                            </animateMotion>
-                        </g>
-                    </a>
-
-
-
-
-
-                </g>
+                <path id="curveBg" class="svgBg" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z"></path>
 
             </svg>
 
+
+            <!-- <div class="textParticles">
+                <canvas id="scene"></canvas>
+                <input id="copy" type="text" value="光 爱 照 明" />
+            </div> -->
+
+
+            <div class="navSvg">
+                <svg class="svgCurve" viewbox="0 0 1920 920" preserveAspectRatio="xMidYMax slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                    <!-- <path id="svgBg" class="svgBg" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z" fill="black"></path> -->
+                    <symbol id="maskBg">
+                        <g fill="white">
+                            <path id="svgBg" class="svgBg" d="M 0 700 Q 960 1000 1920 700 V 0 H 0 Z"></path>
+                        </g>
+                    </symbol>
+
+                    <mask id="maskLink">
+                        <use xlink:href="#maskBg" />
+                    </mask>
+
+
+
+                    <!-- <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svgBg" fill="#010813"></use> -->
+                    <g mask="url(#maskLink)">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#maskImg"></use>
+                    </g>
+                    <path id="navCurve" stroke="red" fill="none" stroke-width="3" d="M 0 700 Q 960 1000 1920 700">
+                    </path>
+                    <path id="textCurve" stroke="none" fill="none" stroke-width="3" d="M 0 620 Q 960 920 1920 620">
+                    </path>
+
+
+
+
+
+
+
+                    <symbol id="maskImg">
+                        <image class="clipImg" xlink:href="img/eyessvg.png" x="0" y="0" width="100%" height="100%" />
+                        <image class="clipImg" xlink:href="img/Architecture.png" x="0" y="0" width="100%"
+                            height="100%" />
+                        <image class="clipImg" xlink:href="img/Skyscrapers.png" x="0" y="0" width="100%"
+                            height="100%" />
+                        <image class="clipImg" xlink:href="img/Lights.png" x="0" y="0" width="100%" height="100%" />
+                    </symbol>
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc"
+                        text-anchor="middle">我们为每一盏灯精确配光，满足您对灯光的极致体验</text>
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc"
+                        text-anchor="middle">融合智能照明控制，呈现美轮美奂的效果</text>
+                    <text class="sliderText" font-size="24" x="50%" y="200" fill="#ccc"
+                        text-anchor="middle">优秀建筑照明设计，是为了我们的天空更美妙</text>
+                    <text class="sliderText" font-size="24" x="35%" y="200" fill="#ccc"
+                        text-anchor="middle">国际灯光节作品，也许可以代表我们的行业水平</text>
+
+
+
+
+                    <text font-family="Verdana" font-size="38">
+                        <textPath class="galdText" x='0' y='0' xlink:href="#textCurve" startOffset="50%"
+                            text-anchor="middle" fill='white'>
+                            光 爱 照 明 设 计
+                        </textPath>
+                    </text>
+
+
+
+
+                    <g class='navIcons'>
+
+                        <a href="#galdhome">
+                            <g class='navIcon navHomeGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <animateMotion class='navHome' rotate="auto" keyPoints="0.5;0.5" begin="0s"
+                                    keyTimes="0;1" calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+                        <a href="#galdteam">
+                            <g class='navIcon navTeamGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <animateMotion class='navTeam' rotate="auto" keyPoints="0.5;0.5" begin="0s"
+                                    keyTimes="0;1" calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+
+                        <a href="#galdwork">
+                            <g class='navIcon navWorkGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <animateMotion class='navWork' rotate="auto" keyPoints="0.5;0.5" begin="0s"
+                                    keyTimes="0;1" calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+                        <a href="#galdcontact">
+                            <g class='navIcon navContactGroup'>
+                                <circle class="navItem" cx="0" cy="0" r="45" fill="red"></circle>
+                                <animateMotion class='navContact' rotate="auto" keyPoints="0.5;0.5" begin="0s"
+                                    keyTimes="0;1" calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+
+
+                        <a href="#galdhome">
+                            <g class='galdLogo' id="galdLogo">
+                                <circle class="navItem galdCicle" cx="0" cy="0" r="60" fill="red"></circle>
+                                <text x='0' y='50' text-anchor="middle" class="icon iconfont iconLogo">&#xe601;</text>
+                                <animateMotion id='navLogo' rotate="auto" keyPoints="0.5;0.5" begin="0s" keyTimes="0;1"
+                                    calcMode="linear" dur="3s" fill="freeze" repeatCount="indefinite">
+                                    <mpath xlink:href="#navCurve"></mpath>
+                                </animateMotion>
+                            </g>
+                        </a>
+
+
+
+
+
+                    </g>
+
+                </svg>
+            </div>
 
         </div>
 
@@ -180,15 +202,119 @@
         </div>
 
 
-        <div class="newWork">
-            <div class="blobs">
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
-                <div class="blob"></div>
+
+
+        <div class="waveCards">
+
+
+
+
+
+            <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                    <defs>
+                        <path id="gentle-wave" width=100% height=100% d="M-160 44c30 0 
+                    58-18 88-18s
+                    58 18 88 18 
+                    58-18 88-18 
+                    58 18 88 18
+                    v44h-352z" />
+                    </defs>
+
+            </svg>
+
+
+            <div class="waveCard waveCard1">
+                <div class="waveCont">
+                    <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="50" y="10" fill="#4579e2" />
+                                    <use xlink:href="#gentle-wave" x="50" y="13" fill="#3461c1" />
+                                    <use xlink:href="#gentle-wave" x="50" y="16" fill="#2d55aa" />
+                                </g>
+                        </svg>
+
+                    <div class="infoBox">
+                        <!-- <h1>GALD</h1> -->
+                    </div>
+                </div>
             </div>
 
+
+            <div class="waveCard waveCard2">
+                <div class="waveCont">
+                    <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="50" y="10" fill="#4579e2" />
+                                    <use xlink:href="#gentle-wave" x="50" y="13" fill="#3461c1" />
+                                    <use xlink:href="#gentle-wave" x="50" y="16" fill="#2d55aa" />
+                                </g>
+                        </svg>
+
+                    <div class="infoBox">
+                        <!-- <h1>GALD</h1> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="waveCard waveCard3">
+                <div class="waveCont">
+                    <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                                    <g class="parallax">
+                                        <use xlink:href="#gentle-wave" x="50" y="10" fill="#4579e2" />
+                                        <use xlink:href="#gentle-wave" x="50" y="13" fill="#3461c1" />
+                                        <use xlink:href="#gentle-wave" x="50" y="16" fill="#2d55aa" />
+                                    </g>
+                            </svg>
+
+                    <div class="infoBox">
+                        <!-- <h1>GALD</h1> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="waveCard waveCard4">
+                <div class="waveCont">
+                    <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                            <g class="parallax">
+                                <use xlink:href="#gentle-wave" x="50" y="10" fill="#4579e2" />
+                                <use xlink:href="#gentle-wave" x="50" y="13" fill="#3461c1" />
+                                <use xlink:href="#gentle-wave" x="50" y="16" fill="#2d55aa" />
+                            </g>
+                    </svg>
+
+                    <div class="infoBox">
+                        <!-- <h1>GALD</h1> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="waveCard waveCard5">
+                <div class="waveCont">
+                    <svg class="editorial" x="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 100" preserveAspectRatio="none">
+                                <g class="parallax">
+                                    <use xlink:href="#gentle-wave" x="50" y="10" fill="#4579e2" />
+                                    <use xlink:href="#gentle-wave" x="50" y="13" fill="#3461c1" />
+                                    <use xlink:href="#gentle-wave" x="50" y="16" fill="#2d55aa" />
+                                </g>
+                        </svg>
+
+                    <div class="infoBox">
+                        <!-- <h1>GALD</h1> -->
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+
+
+
 
 
     </div>
@@ -298,6 +424,7 @@
 <script src='js/TweenMax.min.js'></script>
 
 <script src='js/header.js'></script>
+<script src="incude/wavecard/js/waveCard.js"></script>
 
 <script src='js/conf.js'></script>
 <script src='js/index.js'></script>

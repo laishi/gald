@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var svgBox = document.getElementById("svgBox");
+    var curveBg = document.getElementById("curveBg");
     var svgBg = document.getElementById("svgBg");
     var navCurve = document.getElementById("navCurve");
     var textCurve = document.getElementById("textCurve");
@@ -55,7 +56,7 @@ $(document).ready(function() {
 
     starttw.set('.clipImg', { x: window.innerWidth, scale: 1, opacity: 0.2 });
 
-    starttw.staggerTo('.clipImg', 5, { ease: SlowMo.ease.config(0.1, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
+    starttw.staggerTo('.clipImg', 5, { ease: SlowMo.ease.config(0.1, 1, false), opacity: 1.2, x: -window.innerWidth }, 5);
 
 
 
@@ -67,7 +68,7 @@ $(document).ready(function() {
 
     texttw.set('.sliderText', { x: window.innerWidth, scale: 1, opacity: 0.2 });
 
-    texttw.staggerTo('.sliderText', 5, { ease: SlowMo.ease.config(0.3, 1, false), opacity: 1.2, x: -window.innerWidth }, 4);
+    texttw.staggerTo('.sliderText', 5, { ease: SlowMo.ease.config(0.5, 1, false), opacity: 1.2, x: -window.innerWidth }, 5);
 
 
 
@@ -109,6 +110,10 @@ $(document).ready(function() {
             curveValue = svgScrollH - parseFloat(scrollPos * curveRate);
 
 
+            curveBg.setAttribute(
+                "d",
+                "M 0 " + svgHeight + " Q " + windowHS + " " + curveValue + " 1920 700 V 0 H 0 Z"
+            );
             svgBg.setAttribute(
                 "d",
                 "M 0 " + svgHeight + " Q " + windowHS + " " + curveValue + " 1920 700 V 0 H 0 Z"

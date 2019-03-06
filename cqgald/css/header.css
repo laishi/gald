@@ -21,9 +21,10 @@
     position: absolute;
 }
 
+
 .svgHeader {
     position: relative;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .profile {
@@ -70,12 +71,25 @@
     height: 88vh;
 }
 
+.navSvg {
+    position: absolute;
+    width: 100%;
+    height: 88vh;
+    z-index: 3;
+}
+
 .svgCurve {
     position: absolute;
     width: 100%;
     height: 88vh;
 }
 
+.svgCurveBg {
+    position: absolute;
+    width: 100%;
+    height: 88vh;
+    z-index: 1;
+}
 .galdjj {
     position: relative;
     padding: 1em 0;
@@ -158,18 +172,7 @@ circle {
     color: white;
 }
 
-.galdjj {
-    position: relative;
-    padding: 1em 0;
-    letter-spacing: 1px;
-    line-height: 32px;
-    text-indent: 2em;
-    color: #ccc;
-    top: 0px;
-    background-color: purple;
-    z-index: -1;
-    text-align: justify;
-}
+
 
 .iconLogo {
     font-family: "iconfont" !important;

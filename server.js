@@ -16,4 +16,4 @@ app.get('/', function(req, res) {
 
 app.listen(8080);
 
-console.log("Running at Port 8080");
+console.log("http://148.70.212.82:8080/");
